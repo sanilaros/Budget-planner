@@ -8,16 +8,16 @@
   --green: #22c55e;
   --red: #ef4444;
   --orange: #f97316;
-  --blue: #6366f1;
-  --blue-dark: #4f46e5;
-  --bg: #f8f7ff;
+  --blue: #16a34a;
+  --blue-dark: #15803d;
+  --bg: #f0fdf4;
   --card: #ffffff;
-  --text: #1a1a2e;
+  --text: #052e16;
   --text-muted: #6b7280;
-  --border: #e9e8f8;
+  --border: #dcfce7;
   --radius: 16px;
-  --shadow: 0 2px 12px rgba(99,102,241,0.08);
-  --shadow-hover: 0 8px 24px rgba(99,102,241,0.15);
+  --shadow: 0 2px 12px rgba(22,163,74,0.08);
+  --shadow-hover: 0 8px 24px rgba(22,163,74,0.18);
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 
 /* ===== HEADER ===== */
 .app-header {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background: linear-gradient(135deg, #052e16 0%, #14532d 50%, #166534 100%);
   color: white;
   padding: 16px 28px;
   display: flex;
@@ -178,18 +178,18 @@ body {
 
 /* ===== INCOME SECTION ===== */
 .income-section {
-  background: linear-gradient(135deg, #eef2ff, #f0fdf4);
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
   border-radius: var(--radius);
   padding: 22px 24px;
   margin-bottom: 24px;
-  border: 1px solid #e0e7ff;
+  border: 1px solid #bbf7d0;
 }
 
 .income-section h3 {
   margin-bottom: 16px;
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--blue-dark);
+  color: #166534;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -259,7 +259,7 @@ body {
 
 .progress-bar {
   height: 10px;
-  background: #f1f0fe;
+  background: #dcfce7;
   border-radius: 99px;
   overflow: hidden;
 }
@@ -289,12 +289,12 @@ body {
 
 /* ===== BALANCE CARD ===== */
 .balance-card {
-  background: linear-gradient(135deg, #1a1a2e, #0f3460);
+  background: linear-gradient(135deg, #052e16, #166534);
   border-radius: var(--radius);
   padding: 28px;
   text-align: center;
   margin-top: 8px;
-  box-shadow: 0 8px 32px rgba(15,52,96,0.25);
+  box-shadow: 0 8px 32px rgba(5,46,22,0.25);
 }
 
 .balance-card .card-label {
