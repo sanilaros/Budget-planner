@@ -228,9 +228,9 @@ function renderDashboard() {
       <div class="cat-cards">${catCardsHtml}</div>
     </div>
 
-    <div class="card" style="text-align:center;padding:24px;margin-top:16px">
-      <div class="card-label">יתרה בפועל (אחרי כל הוצאה)</div>
-      <div class="card-value ${unspentClass}" style="font-size:2.2rem">${unspent < 0 ? '-' : ''}${formatCurrency(unspent)}</div>
+    <div class="balance-card">
+      <div class="card-label">יתרה בפועל — אחרי כל ההוצאות</div>
+      <div class="card-value ${unspentClass}">${unspent < 0 ? '-' : ''}${formatCurrency(unspent)}</div>
     </div>`
 }
 
