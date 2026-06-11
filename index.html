@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>תכנון תקציב משפחתי</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<header class="app-header">
+  <h1>💰 תכנון תקציב</h1>
+  <nav class="nav-tabs">
+    <button class="nav-tab active" data-view="dashboard" onclick="switchView('dashboard')">סקירה</button>
+    <button class="nav-tab" data-view="fixed" onclick="switchView('fixed')">הוצאות קבועות</button>
+    <button class="nav-tab" data-view="categories" onclick="switchView('categories')">קטגוריות</button>
+    <button class="nav-tab" data-view="history" onclick="switchView('history')">היסטוריה</button>
+  </nav>
+</header>
+
+<main class="main-content">
+
+  <!-- Month bar -->
+  <div class="month-bar">
+    <button onclick="goToPrevMonth()">‹ הקודם</button>
+    <span id="monthLabel"></span>
+    <button onclick="goToNextMonth()">הבא ›</button>
+    <button class="btn-new-month" id="btnNewMonth" onclick="createNewMonth()">+ חודש חדש</button>
+  </div>
+
+  <!-- Views -->
+  <div id="view-dashboard" class="view active">
+    <div id="dashboard-content"></div>
+  </div>
+
+  <div id="view-fixed" class="view">
+    <div id="fixed-content"></div>
+  </div>
+
+  <div id="view-categories" class="view">
+    <div id="categories-content"></div>
+  </div>
+
+  <div id="view-history" class="view">
+    <div id="history-content"></div>
+  </div>
+
+</main>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav">
+  <button class="mnav-btn active" data-view="dashboard" onclick="switchView('dashboard')">
+    <span class="icon">📊</span>סקירה
+  </button>
+  <button class="mnav-btn" data-view="fixed" onclick="switchView('fixed')">
+    <span class="icon">📋</span>קבועות
+  </button>
+  <button class="mnav-btn" data-view="categories" onclick="switchView('categories')">
+    <span class="icon">🛒</span>קטגוריות
+  </button>
+  <button class="mnav-btn" data-view="history" onclick="switchView('history')">
+    <span class="icon">📈</span>היסטוריה
+  </button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
